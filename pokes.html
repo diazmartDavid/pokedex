@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemones m-a-mones</title>
+    <link rel="stylesheet" type="text/css" href="pokes.css">
+</head>
+<!-- https://codepen.io/alinas_view/pen/OJyKgZW-->
+
+<body>
+  
+  <div class="pokeindex">
+       
+    <div class="pokeindex-right">
+      
+      
+      <div class="pokeindex-right__screen">
+        <input class="inputName" type="text" placeholder="Nombre de Pokemon" id="pokeName" name="pokeName">
+        <button  onclick="fetchPokemon()">Mostrar Pokemon</button>
+      </div>
+
+      
+
+      
+      <div class="pokeindex-right__buttons">
+        <span id="hp"></span>
+        <span id="atack"></span>
+        <span id="defense"></span>
+        <span id="speed"></span>
+        <span id="sAtack"></span>
+        <span id="sDefense"></span>
+       
+      </div>
+
+      <div class="pokeindex-right__buttons-triple">
+
+        <div class="light"></div>
+      </div>
+      <div class="pokeindex-right__buttons-double">
+        <span id="movWord"></span>
+        <span id="movimientos"></span>
+      </div>
+    </div>
+
+
+    <div class="pokeindex-middle"></div>
+    <div class="pokeindex-left">
+       
+        <div class="pokeindex-left__screen">
+          <div class="dots">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="screen">
+            <img class="imgpok" src="img/pokeball.png" alt="pokeball" id="pokeImg"> 
+          </div>
+          <div class="status">
+            <div class="status-light"></div>
+            <div class="status-sound">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="pokeindex-left__buttons">
+          <div class="buttons">
+            <div class="buttons-quadnum">
+              <span class="num"><label id="labelNum"></label></span>
+            </div>              
+            <div class="buttons-quad">              
+              <span class="nombre"><label id="labelNombre"></label> </span>
+            </div>
+          </div>
+          
+          <div class="controller">
+            <span class="type1"><label id="typePoke1"></label></span>
+            <span class="type2"><label id="typePoke2"></label> </span> 
+
+            
+          </div>
+          
+        </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+<footer>
+    <script src="pokes.js"></script>
+</footer>
+
+</html>
